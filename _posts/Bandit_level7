@@ -1,1 +1,8 @@
-
+find / -group bandit6 -user bandit7 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
+password <HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs>
+Launched Putty application
+<Host Name or IP Address> bandit6@bandit.labs.overthewire.org
+<Port>2220
+Clicked <Open>
+When prompted for password typed <HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs>
