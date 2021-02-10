@@ -1,1 +1,17 @@
+ls
+cd inhere
+cat < 'file01'
+cat < 'file02'
+cat < 'file03'
+cat < 'file04'
+cat < 'file005'
+cat < 'file06'
+cat < 'file07'
+password <koReBOKuIDDepwhWk7jZC0RTdopnAYKh>
 
+
+Launched Putty application
+<Host Name or IP Address> bandit1@bandit.labs.overthewire.org
+<Port>2220
+Clicked <Open>
+When prompted for password typed <koReBOKuIDDepwhWk7jZC0RTdopnAYKh>
