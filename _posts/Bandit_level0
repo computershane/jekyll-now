@@ -1,3 +1,4 @@
 Launched Putty application
-Connected to bandit0@bandit.labs.overthewire.org in <host_name> field
+<Host Name or IP Address> bandit0@bandit.labs.overthewire.org
+<Port>2220
 When prompted for password typed <bandit0>
