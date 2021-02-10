@@ -1,0 +1,8 @@
+find /home/bandit5/inhere/maybehere* \! -executable -size 1033c
+cat .file2
+password <DXjZPULLxYr17uwoI01bNLQbtFemEgo7>
+Launched Putty application
+<Host Name or IP Address> bandit6@bandit.labs.overthewire.org
+<Port>2220
+Clicked <Open>
+When prompted for password typed <DXjZPULLxYr17uwoI01bNLQbtFemEgo7>
