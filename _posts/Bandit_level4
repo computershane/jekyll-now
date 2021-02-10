@@ -1,1 +1,9 @@
-
+ls -lf
+cd inhere
+ls -lf
+cat .hidden
+Launched Putty application
+<Host Name or IP Address> bandit4@bandit.labs.overthewire.org
+<Port>2220
+Clicked <Open>
+When prompted for password typed <pIwrPrtPN36QITSp3EQaw936yaFoFgAB>
