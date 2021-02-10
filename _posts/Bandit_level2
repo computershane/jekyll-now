@@ -1,2 +1,8 @@
 cat < -
 password <CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9>
+Launched Putty application
+<Host Name or IP Address> bandit2@bandit.labs.overthewire.org
+<Port>2220
+Clicked <Open>
+When prompted for password typed <CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9>
+
