@@ -1,1 +1,8 @@
-
+ls
+cat 'spaces in this filename'
+password <UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK>
+Launched Putty application
+<Host Name or IP Address> bandit3@bandit.labs.overthewire.org
+<Port>2220
+Clicked <Open>
+When prompted for password typed <UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK>
