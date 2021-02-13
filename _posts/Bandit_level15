@@ -1,0 +1,85 @@
+ls
+bandit15@bandit:~$ s_client -connect localhost -p 30003
+-bash: s_client: command not found
+bandit15@bandit:~$ openssl s_client -connect localhost -p 30003
+s_client: Option unknown option -p
+s_client: Use -help for summary.
+bandit15@bandit:~$ openssl s_client -connect localhost:30003
+139858044616768:error:0200206F:system library:connect:Connection refused:../crypto/bio/b_sock2.c:108:
+139858044616768:error:2008A067:BIO routines:BIO_connect:connect error:../crypto/bio/b_sock2.c:109:
+connect:errno=111
+bandit15@bandit:~$ openssl s_client -connect localhost:30001
+CONNECTED(00000003)
+depth=0 CN = localhost
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = localhost
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=localhost
+   i:/CN=localhost
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICBjCCAW+gAwIBAgIEPksiGTANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAls
+b2NhbGhvc3QwHhcNMjEwMTAzMTkzODIzWhcNMjIwMTAzMTkzODIzWjAUMRIwEAYD
+VQQDDAlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM2B6gJt
+YTxcQPphtWBuM1ge8cuuvdaD4jc0LZ4PMQzqxH3xnw1pRWIJPUXHxoqbC4xxXNLk
+6zR0CrLH2AfPraS3gMPy7MtmDoGpNea3XJ/t1jkcxSNPsTfoGjpHhJ686lmQLsO4
+CAsLHYupe/dFwHwQYjfmp8M3rpWm8jv3kzK9AgMBAAGjZTBjMBQGA1UdEQQNMAuC
+CWxvY2FsaG9zdDBLBglghkgBhvhCAQ0EPhY8QXV0b21hdGljYWxseSBnZW5lcmF0
+ZWQgYnkgTmNhdC4gU2VlIGh0dHBzOi8vbm1hcC5vcmcvbmNhdC8uMA0GCSqGSIb3
+DQEBBQUAA4GBAFEvYhX6w87jWnKLpx9iSVhI1cBxNS5tzzOT+XzjIiZF5v78QJcp
+I7h4z4ncZVOJGazdArF+6/B2uHFT7+QKVmQNbnX/wSAEJM0Mvp9qHOlMYaRvwP34
+BRXc6VqbVQ4EbPTU5UcN1Yp7lLJ4DuNYfChFpX0xCTkhIvGWqXkGecyP
+-----END CERTIFICATE-----
+subject=/CN=localhost
+issuer=/CN=localhost
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1019 bytes and written 269 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: A0012B08298AE5BAA647B1197EFC9B860DE29F0D2B181707DF01CC1387CDEDF3
+    Session-ID-ctx: 
+    Master-Key: D1BDE9A557C5E977BA93E7D14A82031D54F9603ABCAD9BFBB1973FEB4A1C7A4009D43B47793ADDD47F149942F4CD2722
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - a9 48 f8 cd 59 86 5a b6-19 9c 9f f8 42 95 26 f2   .H..Y.Z.....B.&.
+    0010 - 4a b9 b2 af 6e 13 53 ce-a3 99 5e 42 a2 ab 02 8a   J...n.S...^B....
+    0020 - c9 78 33 db a5 a1 d7 ff-f8 b6 09 c0 97 99 40 d4   .x3...........@.
+    0030 - ac 4e ed f0 5b 17 c7 1e-8e e3 c9 c0 c8 25 08 a5   .N..[........%..
+    0040 - 98 85 8b 6a 95 01 b2 5d-eb d1 f3 84 94 f6 d6 e1   ...j...]........
+    0050 - f5 e4 7c c8 60 89 98 c8-d5 62 de 74 45 d6 5a 48   ..|.`....b.tE.ZH
+    0060 - e8 6e 9a 09 1c 3b 90 20-46 f8 ef f4 41 f3 1c 07   .n...;. F...A...
+    0070 - ee 94 e7 c7 ab 0d 40 35-1b 8c 18 a5 b4 b5 3b dd   ......@5......;.
+    0080 - f2 74 39 7d 08 f0 1b ff-26 e6 22 4e ff f3 44 9f   .t9}....&."N..D.
+    0090 - 25 08 a1 9c 10 cf 31 37-7a c5 9f 28 32 fb dc 4d   %.....17z..(2..M
+
+    Start Time: 1613212711
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: yes
+---
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+Correct!
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+closed
+bandit15@bandit:~$ 
