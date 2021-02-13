@@ -1,8 +1,4 @@
 ls
 cat data.txt | grep millionth
 password <cvX2JJa4CFALtqS87jk27qwqGhBM9plV>
-Launched Putty application
-<Host Name or IP Address> bandit8@bandit.labs.overthewire.org
-<Port>2220
-Clicked <Open>
-When prompted for password typed <cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+ssh bandit8@bandit.labs.overthewire.org -p 2220
