@@ -1,8 +1,4 @@
 Typed command <ls>
 typed command <cat readme>
 password <boJ9jbbUNNfktd78OOpsqOltutMc3MY1>
-Launched Putty application
-<Host Name or IP Address> bandit1@bandit.labs.overthewire.org
-<Port>2220
-Clicked <Open>
-When prompted for password typed <boJ9jbbUNNfktd78OOpsqOltutMc3MY1>
+ssh bandit1@bandit.labs.overthewire.org -p 2220
