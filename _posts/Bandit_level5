@@ -8,10 +8,4 @@ cat < 'file005'
 cat < 'file06'
 cat < 'file07'
 password <koReBOKuIDDepwhWk7jZC0RTdopnAYKh>
-
-
-Launched Putty application
-<Host Name or IP Address> bandit1@bandit.labs.overthewire.org
-<Port>2220
-Clicked <Open>
-When prompted for password typed <koReBOKuIDDepwhWk7jZC0RTdopnAYKh>
+ssh bandit5@bandit.labs.overthewire.org -p 2220
