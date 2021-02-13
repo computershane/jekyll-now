@@ -1,5 +1,2 @@
-Launched Putty application
-<Host Name or IP Address> bandit0@bandit.labs.overthewire.org
-<Port>2220
-Clicked <Open>
+ssh bandit0@bandit.labs.overthewire.org -p 2220
 When prompted for password typed <bandit0>
