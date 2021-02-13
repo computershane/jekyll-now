@@ -1,1 +1,16 @@
+bandit17@bandit:~$ clear
+bandit17@bandit:~$ ls
+passwords.new  passwords.old
+bandit17@bandit:~$ df passwords.new  passwords.old 
+Filesystem           1K-blocks    Used Available Use% Mounted on
+/dev/mapper/vg0-root  19551468 3380948  15154304  19% /
+/dev/mapper/vg0-root  19551468 3380948  15154304  19% /
+bandit17@bandit:~$ dif passwords.new  passwords.old 
+-bash: dif: command not found
+bandit17@bandit:~$ diff passwords.new  passwords.old 
+42c42
+< kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+---
+> w0Yfolrc5bwjS4qw5mq1nnQi6mF03bii
+bandit17@bandit:~$ 
 
