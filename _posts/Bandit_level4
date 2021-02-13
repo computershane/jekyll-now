@@ -3,8 +3,4 @@ cd inhere
 ls -lf
 cat .hidden
 password <pIwrPrtPN36QITSp3EQaw936yaFoFgAB>
-Launched Putty application
-<Host Name or IP Address> bandit4@bandit.labs.overthewire.org
-<Port>2220
-Clicked <Open>
-When prompted for password typed <pIwrPrtPN36QITSp3EQaw936yaFoFgAB>
+ssh bandit4@bandit.labs.overthewire.org -p 2220
