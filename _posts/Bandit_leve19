@@ -1,0 +1,76 @@
+bandit19@bandit:~$ ./setuid
+-bash: ./setuid: No such file or directory
+bandit19@bandit:~$ ls
+bandit20-do
+bandit19@bandit:~$ ./bandit20-do 
+Run a command as another user.
+  Example: ./bandit20-do id
+bandit19@bandit:~$ ls -laf
+.bashrc  ..  .profile  .bash_logout  bandit20-do  .
+bandit19@bandit:~$ ls -lfh
+.bashrc  ..  .profile  .bash_logout  bandit20-do  .
+bandit19@bandit:~$ ls -lha
+total 28K
+drwxr-xr-x  2 root     root     4.0K May  7  2020 .
+drwxr-xr-x 41 root     root     4.0K May  7  2020 ..
+-rwsr-x---  1 bandit20 bandit19 7.2K May  7  2020 bandit20-do
+-rw-r--r--  1 root     root      220 May 15  2017 .bash_logout
+-rw-r--r--  1 root     root     3.5K May 15  2017 .bashrc
+-rw-r--r--  1 root     root      675 May 15  2017 .profile
+bandit19@bandit:~$ cat bandit20-do 
+ELFp4�4         (444  TT ��hhhDDP�td���44Q�tdR��/lib/ld-linux.so.2GNU GNU��$���
+�{"�$�~▒�*��  �K��%> ▒,
+M��                    Llibc.so.6_IO_stdin_usedexitexecvprintf__libc_start_main__gmon_start__GLIBC_2.0ii
+  ▒S�����
+         ��������t�V�[��5��%
+                            h������%������%h������%▒h▒������%�f�1�^�����PTRh0hQVhk������f�f�f�f�f�f�f��$�f�f�f�f�f�f��'-$��v▒���tU����h$�Ѓ���Ð�t&�$-$���������t��tU����Ph$����Ít&��'�=$uU����|����$���f�����u듍v���t�U����P����u����L$����q�U��Q���ȃ8 �@��PhP���������
+                                                                                                                              j������P����ph����������M�ɍa��f�f�UWVS�������'�
+                                     �l$ ��
+                                           ������������)�����t%1������t$,�t$,U���������9�u���
+                                                                                             [^_]Ív��S��c������▒�[�Run a command as another user.
+  Example: %s id
+env/usr/bin/env0|���L����p�����<���������zR|
+                                            (���F
+                                                 J
+                                                  tx?▒;*2$"@T��(TK���aD
+                                                                       GuCu|N
+                                                                             A�C
+                                                                                H�����]�A
+                                                                                         �A�A�N i$D(D,A0M GA�A�
+                                                                                                               AA������@ �
+▒�                                                                                                                       ��
+ ���o�<�
+W
+���o����o���o�&6FVGCC: (Debian 6.3.0-18+deb9u1) 6.3.0 20170516Th�<�Ă�   
+��
+ �
+p4H�ȅ
+   �▒$▒�
+        �. D$▒S
+               z@�����������
+                            ����
+▒ 00�a FX$*4_l {� �L���]�(▒ep�H�$▒�ka�$���
+                                         crtstuff.c__JCR_LIST__deregister_tm_clones__do_global_dtors_auxcompleted.6587__do_global_dtors_aux_fini_array_entryframe_dummy__frame_dummy_init_array_entrybandit20.c__FRAME_END____JCR_END____init_array_end_DYNAMIC__init_array_start__GNU_EH_FRAME_HDR_GLOBAL_OFFSET_TABLE___libc_csu_fini__x86.get_pc_thunk.bxprintf@@GLIBC_2.0_edata__data_start__gmon_start__exit@@GLIBC_2.0__dso_handle_IO_stdin_used__libc_start_main@@GLIBC_2.0execv@@GLIBC_2.0__libc_csu_init_fp_hw__bss_startmain__TMC_END__.symtab.strtab.shstrtab.interp.note.ABI-tag.note.gnu.build-id.gnu.hash.dynsym.dynstr.gnu.version.gnu.version_r.rel.dyn.rel.plt.init.plt.got.text.fini.rodata.eh_frame_hdr.eh_frame.init_array.fini_array.jcr.dynamic.got.plt.data.bss.commentT#hh 1��$D���o�� N
+                                                                                                       �pV<<W^���o��k���o�� z  ��     � ���#�P��pp��44�HHJ���4����
+                         �
+                         ������$$0$-T@/ �       �
+bandit19@bandit:~$ file bandit20-do 
+bandit20-do: setuid ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=8e941f24b8c5cd0af67b22b724c57e1ab92a92a1, not stripped
+bandit19@bandit:~$ bandit20-     ^C
+bandit19@bandit:~$ ^C
+bandit19@bandit:~$ ^C
+bandit19@bandit:~$ ^C
+bandit19@bandit:~$ ^C
+bandit19@bandit:~$ ^C
+bandit19@bandit:~$ ^C
+bandit19@bandit:~$ file bandit20-do 
+bandit20-do: setuid ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=8e941f24b8c5cd0af67b22b724c57e1ab92a92a1, not stripped
+bandit19@bandit:~$ ./bandit20-do 
+Run a command as another user.
+  Example: ./bandit20-do id
+bandit19@bandit:~$ ./bandit20-do | whoami
+bandit19
+bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass
+cat: /etc/bandit_pass: Is a directory
+bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
